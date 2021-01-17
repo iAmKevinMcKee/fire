@@ -17,8 +17,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
+    Route::get('/talks', [\App\Http\Controllers\TalkController::class, 'index'])
+        ->name('talks.index');
+    Route::get('/talks/{talk}', [\App\Http\Controllers\TalkController::class, 'show'])
+        ->name('talks.show');
+
+    Route::get('/fire-tweets', function() {
+        return view('fire-tweets');
+    })->name('tweets.index');
+});
 
 require __DIR__.'/auth.php';
