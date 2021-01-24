@@ -8,11 +8,6 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="min-h-screen bg-gray-100">
-
-                <!-- This example requires Tailwind CSS v2.0+ -->
-
-
-
                 <div
                     x-data="{addTalk: false}"
                     class="bg-white shadow overflow-hidden sm:rounded-md">
@@ -26,8 +21,9 @@
                             <div class="ml-4 mt-2 flex-shrink-0">
                                 <button
                                     x-on:click="addTalk = !addTalk"
+                                    x-on:click.away="addTalk = false"
                                     type="button" class="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                    Create new talk
+                                    Add New Talk
                                 </button>
                             </div>
                         </div>
