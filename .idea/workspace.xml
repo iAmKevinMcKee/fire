@@ -12,8 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="069ede3f-b9f3-4394-9a99-ed971cae1f4d" name="Default Changelist" comment="wip">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/talks/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/talks/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -168,7 +172,7 @@
       <updated>1610904752167</updated>
       <workItem from="1610904753207" duration="183000" />
       <workItem from="1610904983723" duration="4135000" />
-      <workItem from="1610909926370" duration="4177000" />
+      <workItem from="1610909926370" duration="4512000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1610905126627</created>
@@ -184,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610912815472</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="wip">
+      <created>1611508409097</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611508409097</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,15 +219,20 @@
     <option name="LAST_COMMIT_MESSAGE" value="wip" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="333" y="125" key="DiffContextDialog" timestamp="1611508420662">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state x="333" y="125" key="DiffContextDialog/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611508420662" />
     <state width="875" height="700" key="SwitcherDM" timestamp="1610912727576">
       <screen x="0" y="23" width="1600" height="877" />
     </state>
     <state width="875" height="700" key="SwitcherDM/0.23.1600.877@0.23.1600.877" timestamp="1610912727576" />
     <state width="875" height="700" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1610906135896" />
-    <state x="200" y="23" width="1400" height="877" key="Vcs.Push.Dialog.v2" timestamp="1610912816941">
-      <screen x="0" y="23" width="1600" height="877" />
+    <state x="256" y="23" width="1400" height="877" key="Vcs.Push.Dialog.v2" timestamp="1611508483442">
+      <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="200" y="23" width="1400" height="877" key="Vcs.Push.Dialog.v2/0.23.1600.877@0.23.1600.877" timestamp="1610912816941" />
+    <state x="256" y="23" key="Vcs.Push.Dialog.v2/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611508483442" />
     <state x="518" y="161" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1610905136689" />
     <state x="207" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610908620643">
       <screen x="0" y="23" width="1600" height="877" />
@@ -226,11 +242,11 @@
       <screen x="0" y="23" width="1600" height="877" />
     </state>
     <state x="0" y="23" width="1049" height="877" key="find.popup/0.23.1600.877@0.23.1600.877" timestamp="1610911250414" />
-    <state x="490" y="23" width="1558" height="1572" key="search.everywhere.popup" timestamp="1611506942043">
+    <state x="490" y="23" width="1558" height="1572" key="search.everywhere.popup" timestamp="1611508552065">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="383" y="23" width="1217" height="1221" key="search.everywhere.popup/0.23.1600.877@0.23.1600.877" timestamp="1610912751880" />
-    <state x="490" y="23" width="1558" height="1572" key="search.everywhere.popup/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611506942043" />
+    <state x="490" y="23" width="1558" height="1572" key="search.everywhere.popup/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611508552065" />
     <state x="693" y="23" width="1173" height="1972" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1610906065340" />
   </component>
 </project>
