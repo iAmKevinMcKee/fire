@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/faq', function() {
+    return view ('faq');
+});
+
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
@@ -26,6 +30,8 @@ Route::group(['middleware' => ['auth']], function () {
         ->name('talks.index');
     Route::get('/talks/{talk}', [\App\Http\Controllers\TalkController::class, 'show'])
         ->name('talks.show');
+    Route::post('/talks', [\App\Http\Controllers\TalkController::class, 'create'])
+        ->name('talks.create');
 
     Route::get('/fire-tweets', function() {
         return view('fire-tweets');

@@ -13,4 +13,9 @@ class TalkController extends Controller
     {
         return view('talks.show');
     }
+
+    public function create()
+    {
+
+    }
 }
