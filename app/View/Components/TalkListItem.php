@@ -16,12 +16,6 @@ class TalkListItem extends Component
      */
     public function __construct(Talk $talk)
     {
-        if(! $talk->exists) {
-            $talk->name = "Hotwire in Laravel";
-            $talk->speaker = "Tony Messias";
-            $talk->date = now();
-            $talk->id = 1;
-        }
         $this->talk = $talk;
     }
 

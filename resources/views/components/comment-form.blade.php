@@ -1,4 +1,5 @@
-<form action="#">
+<form method="POST" action="{{route('talk_comment.store', 1)}}">
+    @csrf
     <div>
         <label for="comment" class="sr-only">About</label>
         <textarea id="comment" name="comment" rows="3"

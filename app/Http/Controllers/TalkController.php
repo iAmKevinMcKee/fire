@@ -22,6 +22,6 @@ class TalkController extends Controller
 
     public function store(Request $request)
     {
-        return redirect()->back();
+
     }
 }
