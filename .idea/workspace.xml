@@ -12,15 +12,17 @@
   <component name="ChangeListManager">
     <list default="true" id="069ede3f-b9f3-4394-9a99-ed971cae1f4d" name="Default Changelist" comment="wip">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tenant.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/TenantFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_24_174408_create_tenants_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
@@ -29,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="first-test-run" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -238,10 +240,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="wip" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="333" y="125" key="DiffContextDialog" timestamp="1611508420662">
+    <state x="333" y="125" width="1638" height="903" key="DiffContextDialog" timestamp="1611627951673">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state x="333" y="125" key="DiffContextDialog/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611508420662" />
+    <state x="333" y="125" width="1638" height="903" key="DiffContextDialog/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611627951673" />
+    <state x="204" y="125" key="MergeDialog" timestamp="1611627940389">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state x="204" y="125" key="MergeDialog/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611627940389" />
+    <state x="388" y="216" key="MultipleFileMergeDialog" timestamp="1611627940417">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state x="388" y="216" key="MultipleFileMergeDialog/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611627940417" />
+    <state x="711" y="121" key="RollbackChangesDialog" timestamp="1611627857428">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state x="711" y="121" key="RollbackChangesDialog/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611627857428" />
     <state x="219" y="23" key="SettingsEditor" timestamp="1611509028877">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
@@ -252,11 +266,11 @@
     <state width="875" height="700" key="SwitcherDM/0.23.1600.877@0.23.1600.877" timestamp="1610912727576" />
     <state width="1120" height="902" key="SwitcherDM/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611512855719" />
     <state width="875" height="700" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1610906135896" />
-    <state x="256" y="23" width="1400" height="877" key="Vcs.Push.Dialog.v2" timestamp="1611581576483">
+    <state x="256" y="23" width="1400" height="877" key="Vcs.Push.Dialog.v2" timestamp="1611627835546">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="200" y="23" width="1400" height="877" key="Vcs.Push.Dialog.v2/0.23.1600.877@0.23.1600.877" timestamp="1610912816941" />
-    <state x="256" y="23" key="Vcs.Push.Dialog.v2/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611581576483" />
+    <state x="256" y="23" key="Vcs.Push.Dialog.v2/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611627835546" />
     <state x="518" y="161" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1610905136689" />
     <state x="207" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610908620643">
       <screen x="0" y="23" width="1600" height="877" />
@@ -266,11 +280,11 @@
       <screen x="0" y="23" width="1600" height="877" />
     </state>
     <state x="0" y="23" width="1049" height="877" key="find.popup/0.23.1600.877@0.23.1600.877" timestamp="1610911250414" />
-    <state x="490" y="23" width="1558" height="1572" key="search.everywhere.popup" timestamp="1611625814968">
+    <state x="490" y="23" width="1558" height="1572" key="search.everywhere.popup" timestamp="1611627793542">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="383" y="23" width="1217" height="1221" key="search.everywhere.popup/0.23.1600.877@0.23.1600.877" timestamp="1610912751880" />
-    <state x="490" y="23" width="1558" height="1572" key="search.everywhere.popup/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611625814968" />
+    <state x="490" y="23" width="1558" height="1572" key="search.everywhere.popup/0.23.2048.1129/2048.23.2560.1057@0.23.2048.1129" timestamp="1611627793542" />
     <state x="693" y="23" width="1173" height="1972" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1610906065340" />
   </component>
 </project>
