@@ -30,8 +30,11 @@ Route::group(['middleware' => ['auth']], function () {
         ->name('talks.index');
     Route::get('/talks/{talk}', [\App\Http\Controllers\TalkController::class, 'show'])
         ->name('talks.show');
-    Route::post('/talks', [\App\Http\Controllers\TalkController::class, 'create'])
-        ->name('talks.create');
+    Route::post('/talks', [\App\Http\Controllers\TalkController::class, 'store'])
+        ->name('talks.store');
+
+    Route::post('/talk-comment/{talk}', [\App\Http\Controllers\TalkCommentController::class, 'store'])
+        ->name('talk_comment.store');
 
     Route::get('/fire-tweets', function() {
         return view('fire-tweets');

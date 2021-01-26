@@ -1,9 +1,3 @@
-@props([
-    'name',
-    'text',
-    'createdAt',
-])
-
 <li>
     <div class="flex space-x-3">
         <div class="flex-shrink-0">
@@ -13,13 +7,15 @@
         </div>
         <div>
             <div class="text-sm">
-                <a href="#" class="font-medium text-gray-900">{{$name}}</a>
+                <a href="#" class="font-medium text-gray-900">Fake Name</a>
             </div>
             <div class="mt-1 text-sm text-gray-700">
-                <p>{{$text}}</p>
+                <p>Ducimus quas delectus ad maxime totam doloribus
+                    reiciendis ex. Tempore dolorem maiores. Similique
+                    voluptatibus tempore non ut.</p>
             </div>
             <div class="mt-2 text-sm space-x-2">
-                <span class="text-gray-500 font-medium">{{$createdAt->diffForHumans()}}</span>
+                <span class="text-gray-500 font-medium">4d ago</span>
                 <span class="text-gray-500 font-medium">&middot;</span>
                 <button type="button" class="text-gray-900 font-medium">
                     Reply
