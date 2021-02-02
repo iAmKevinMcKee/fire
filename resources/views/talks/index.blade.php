@@ -14,9 +14,9 @@
                     <x-add-talk-card-header />
                     <x-add-talk-form />
                     <ul class="divide-y divide-gray-200">
-                        <x-talk-list-item-demo />
-                        <x-talk-list-item-demo />
-                        <x-talk-list-item-demo />
+                        @foreach($talks as $talk)
+                            <x-talk-list-item :talk="$talk" />
+                        @endforeach
                     </ul>
                 </div>
             </div>
